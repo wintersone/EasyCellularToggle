@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B116E59C1AB939090001D7E9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B116E59B1AB939090001D7E9 /* CoreTelephony.framework */; };
+		B196950A1AB934B600EE0E6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B19695091AB934B600EE0E6E /* main.m */; };
+		B196950D1AB934B600EE0E6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B196950C1AB934B600EE0E6E /* AppDelegate.m */; };
+		B19695101AB934B600EE0E6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B196950F1AB934B600EE0E6E /* ViewController.m */; };
+		B19695131AB934B600EE0E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19695111AB934B600EE0E6E /* Main.storyboard */; };
+		B19695151AB934B600EE0E6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19695141AB934B600EE0E6E /* Images.xcassets */; };
+		B19695181AB934B600EE0E6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B19695161AB934B600EE0E6E /* LaunchScreen.xib */; };
+		B19695241AB934B600EE0E6E /* EasyCellularTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B19695231AB934B600EE0E6E /* EasyCellularTests.m */; };
+		B19695341AB934CF00EE0E6E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19695331AB934CF00EE0E6E /* NotificationCenter.framework */; };
+		B196953A1AB934CF00EE0E6E /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19695391AB934CF00EE0E6E /* TodayViewController.m */; };
+		B196953C1AB934CF00EE0E6E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B196953B1AB934CF00EE0E6E /* MainInterface.storyboard */; };
+		B196953F1AB934CF00EE0E6E /* CellularToggleWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B19695311AB934CF00EE0E6E /* CellularToggleWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B196951E1AB934B600EE0E6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B19694FC1AB934B600EE0E6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B19695031AB934B600EE0E6E;
+			remoteInfo = EasyCellular;
+		};
+		B196953D1AB934CF00EE0E6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B19694FC1AB934B600EE0E6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B19695301AB934CF00EE0E6E;
+			remoteInfo = CellularToggleWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B19695431AB934CF00EE0E6E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B196953F1AB934CF00EE0E6E /* CellularToggleWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B116E59B1AB939090001D7E9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B19695041AB934B600EE0E6E /* EasyCellular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCellular.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19695081AB934B600EE0E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B19695091AB934B600EE0E6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B196950B1AB934B600EE0E6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B196950C1AB934B600EE0E6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B196950E1AB934B600EE0E6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B196950F1AB934B600EE0E6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B19695121AB934B600EE0E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B19695141AB934B600EE0E6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B19695171AB934B600EE0E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B196951D1AB934B600EE0E6E /* EasyCellularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyCellularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19695221AB934B600EE0E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B19695231AB934B600EE0E6E /* EasyCellularTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyCellularTests.m; sourceTree = "<group>"; };
+		B19695311AB934CF00EE0E6E /* CellularToggleWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CellularToggleWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19695331AB934CF00EE0E6E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B19695371AB934CF00EE0E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B19695381AB934CF00EE0E6E /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		B19695391AB934CF00EE0E6E /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		B196953B1AB934CF00EE0E6E /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B19695011AB934B600EE0E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B196951A1AB934B600EE0E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B196952E1AB934CF00EE0E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B116E59C1AB939090001D7E9 /* CoreTelephony.framework in Frameworks */,
+				B19695341AB934CF00EE0E6E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B19694FB1AB934B600EE0E6E = {
+			isa = PBXGroup;
+			children = (
+				B19695061AB934B600EE0E6E /* EasyCellular */,
+				B19695201AB934B600EE0E6E /* EasyCellularTests */,
+				B19695351AB934CF00EE0E6E /* CellularToggleWidget */,
+				B19695321AB934CF00EE0E6E /* Frameworks */,
+				B19695051AB934B600EE0E6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B19695051AB934B600EE0E6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B19695041AB934B600EE0E6E /* EasyCellular.app */,
+				B196951D1AB934B600EE0E6E /* EasyCellularTests.xctest */,
+				B19695311AB934CF00EE0E6E /* CellularToggleWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B19695061AB934B600EE0E6E /* EasyCellular */ = {
+			isa = PBXGroup;
+			children = (
+				B196950B1AB934B600EE0E6E /* AppDelegate.h */,
+				B196950C1AB934B600EE0E6E /* AppDelegate.m */,
+				B196950E1AB934B600EE0E6E /* ViewController.h */,
+				B196950F1AB934B600EE0E6E /* ViewController.m */,
+				B19695111AB934B600EE0E6E /* Main.storyboard */,
+				B19695141AB934B600EE0E6E /* Images.xcassets */,
+				B19695161AB934B600EE0E6E /* LaunchScreen.xib */,
+				B19695071AB934B600EE0E6E /* Supporting Files */,
+			);
+			path = EasyCellular;
+			sourceTree = "<group>";
+		};
+		B19695071AB934B600EE0E6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B19695081AB934B600EE0E6E /* Info.plist */,
+				B19695091AB934B600EE0E6E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B19695201AB934B600EE0E6E /* EasyCellularTests */ = {
+			isa = PBXGroup;
+			children = (
+				B19695231AB934B600EE0E6E /* EasyCellularTests.m */,
+				B19695211AB934B600EE0E6E /* Supporting Files */,
+			);
+			path = EasyCellularTests;
+			sourceTree = "<group>";
+		};
+		B19695211AB934B600EE0E6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B19695221AB934B600EE0E6E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B19695321AB934CF00EE0E6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B116E59B1AB939090001D7E9 /* CoreTelephony.framework */,
+				B19695331AB934CF00EE0E6E /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B19695351AB934CF00EE0E6E /* CellularToggleWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B19695381AB934CF00EE0E6E /* TodayViewController.h */,
+				B19695391AB934CF00EE0E6E /* TodayViewController.m */,
+				B196953B1AB934CF00EE0E6E /* MainInterface.storyboard */,
+				B19695361AB934CF00EE0E6E /* Supporting Files */,
+			);
+			path = CellularToggleWidget;
+			sourceTree = "<group>";
+		};
+		B19695361AB934CF00EE0E6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B19695371AB934CF00EE0E6E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B19695031AB934B600EE0E6E /* EasyCellular */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B19695271AB934B600EE0E6E /* Build configuration list for PBXNativeTarget "EasyCellular" */;
+			buildPhases = (
+				B19695001AB934B600EE0E6E /* Sources */,
+				B19695011AB934B600EE0E6E /* Frameworks */,
+				B19695021AB934B600EE0E6E /* Resources */,
+				B19695431AB934CF00EE0E6E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B196953E1AB934CF00EE0E6E /* PBXTargetDependency */,
+			);
+			name = EasyCellular;
+			productName = EasyCellular;
+			productReference = B19695041AB934B600EE0E6E /* EasyCellular.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B196951C1AB934B600EE0E6E /* EasyCellularTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B196952A1AB934B600EE0E6E /* Build configuration list for PBXNativeTarget "EasyCellularTests" */;
+			buildPhases = (
+				B19695191AB934B600EE0E6E /* Sources */,
+				B196951A1AB934B600EE0E6E /* Frameworks */,
+				B196951B1AB934B600EE0E6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B196951F1AB934B600EE0E6E /* PBXTargetDependency */,
+			);
+			name = EasyCellularTests;
+			productName = EasyCellularTests;
+			productReference = B196951D1AB934B600EE0E6E /* EasyCellularTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B19695301AB934CF00EE0E6E /* CellularToggleWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B19695401AB934CF00EE0E6E /* Build configuration list for PBXNativeTarget "CellularToggleWidget" */;
+			buildPhases = (
+				B196952D1AB934CF00EE0E6E /* Sources */,
+				B196952E1AB934CF00EE0E6E /* Frameworks */,
+				B196952F1AB934CF00EE0E6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CellularToggleWidget;
+			productName = CellularToggleWidget;
+			productReference = B19695311AB934CF00EE0E6E /* CellularToggleWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B19694FC1AB934B600EE0E6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = POI;
+				TargetAttributes = {
+					B19695031AB934B600EE0E6E = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					B196951C1AB934B600EE0E6E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = B19695031AB934B600EE0E6E;
+					};
+					B19695301AB934CF00EE0E6E = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 8EB9D2KXW5;
+					};
+				};
+			};
+			buildConfigurationList = B19694FF1AB934B600EE0E6E /* Build configuration list for PBXProject "EasyCellular" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B19694FB1AB934B600EE0E6E;
+			productRefGroup = B19695051AB934B600EE0E6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B19695031AB934B600EE0E6E /* EasyCellular */,
+				B196951C1AB934B600EE0E6E /* EasyCellularTests */,
+				B19695301AB934CF00EE0E6E /* CellularToggleWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B19695021AB934B600EE0E6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19695131AB934B600EE0E6E /* Main.storyboard in Resources */,
+				B19695181AB934B600EE0E6E /* LaunchScreen.xib in Resources */,
+				B19695151AB934B600EE0E6E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B196951B1AB934B600EE0E6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B196952F1AB934CF00EE0E6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B196953C1AB934CF00EE0E6E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B19695001AB934B600EE0E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19695101AB934B600EE0E6E /* ViewController.m in Sources */,
+				B196950D1AB934B600EE0E6E /* AppDelegate.m in Sources */,
+				B196950A1AB934B600EE0E6E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19695191AB934B600EE0E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19695241AB934B600EE0E6E /* EasyCellularTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B196952D1AB934CF00EE0E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B196953A1AB934CF00EE0E6E /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B196951F1AB934B600EE0E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B19695031AB934B600EE0E6E /* EasyCellular */;
+			targetProxy = B196951E1AB934B600EE0E6E /* PBXContainerItemProxy */;
+		};
+		B196953E1AB934CF00EE0E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B19695301AB934CF00EE0E6E /* CellularToggleWidget */;
+			targetProxy = B196953D1AB934CF00EE0E6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B19695111AB934B600EE0E6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B19695121AB934B600EE0E6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B19695161AB934B600EE0E6E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B19695171AB934B600EE0E6E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B19695251AB934B600EE0E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B19695261AB934B600EE0E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B19695281AB934B600EE0E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = EasyCellular/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		B19695291AB934B600EE0E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = EasyCellular/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		B196952B1AB934B600EE0E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EasyCellularTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyCellular.app/EasyCellular";
+			};
+			name = Debug;
+		};
+		B196952C1AB934B600EE0E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EasyCellularTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyCellular.app/EasyCellular";
+			};
+			name = Release;
+		};
+		B19695411AB934CF00EE0E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CellularToggleWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B19695421AB934CF00EE0E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CellularToggleWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B19694FF1AB934B600EE0E6E /* Build configuration list for PBXProject "EasyCellular" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19695251AB934B600EE0E6E /* Debug */,
+				B19695261AB934B600EE0E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B19695271AB934B600EE0E6E /* Build configuration list for PBXNativeTarget "EasyCellular" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19695281AB934B600EE0E6E /* Debug */,
+				B19695291AB934B600EE0E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B196952A1AB934B600EE0E6E /* Build configuration list for PBXNativeTarget "EasyCellularTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B196952B1AB934B600EE0E6E /* Debug */,
+				B196952C1AB934B600EE0E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B19695401AB934CF00EE0E6E /* Build configuration list for PBXNativeTarget "CellularToggleWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19695411AB934CF00EE0E6E /* Debug */,
+				B19695421AB934CF00EE0E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B19694FC1AB934B600EE0E6E /* Project object */;
+}
